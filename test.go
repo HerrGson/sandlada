@@ -29,7 +29,7 @@ func NewMessage(content string) Message {
 
 func messageHandler(w http.ResponseWriter, r *http.Request) {
 	log.Printf("%s request was made\n", r.Method)
-	msg := NewMessage("Hello")
+	msg := NewMessage("Hello123")
 	bytes, err := json.Marshal(msg)
 
 	if err != nil {
